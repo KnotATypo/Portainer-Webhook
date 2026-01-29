@@ -1,7 +1,7 @@
 services:
   webhook:
-    build: .
-    container_name: docker-webhook
+    image: knotatypo/portainer-webhook:latest
+    container_name: portainer-webhook
     ports:
       - "5500:5500"
     environment:
