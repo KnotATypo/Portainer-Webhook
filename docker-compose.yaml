@@ -1,0 +1,12 @@
+services:
+  webhook:
+    build: .
+    container_name: docker-webhook
+    ports:
+      - "5500:5500"
+    environment:
+      PORTAINER_USERNAME:
+      PORTAINER_PASSWORD:
+      PORTAINER_API:
+      HOOK_SECRET:
+      LOG_LEVEL: INFO
